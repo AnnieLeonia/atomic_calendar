@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/AnnieLeonia/atomic_calendar.git"
   },
-  "author": "Wojciech Mamak",
+  "author": "Wojciech Mamak, AnnieLeonia, VictorWinberg",
   "license": "ISC",
   "dependencies": {
     "lit-element": "2.0.1",
