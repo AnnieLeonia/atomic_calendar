@@ -35,7 +35,7 @@ class AtomicCalendar extends LitElement {
 
   render() {
     if (this.firstrun) {
-      console.log("atomic_calendar v0.8.9 loaded");
+      console.log("atomic_calendar v0.9.5 loaded");
     }
     this.language =
       this.config.language != ""
@@ -305,7 +305,7 @@ class AtomicCalendar extends LitElement {
         }
 
         hr.progress {
-          margin: -8px 0px 2px 0px;
+          margin: -12px 0px 2px 0px;
           border-width: 1.5px;
           border-style: solid;
         }
