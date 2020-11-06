@@ -35,7 +35,11 @@ class AtomicCalendar extends LitElement {
 
   render() {
     if (this.firstrun) {
-      console.log("atomic_calendar v0.9.5 loaded");
+      console.info(
+        `%c  ATOMIC-CALENDAR  \n%c  Version 0.9.7    `,
+        'color: orange; font-weight: bold; background: black',
+        'color: white; font-weight: bold; background: dimgray',
+      );
     }
     this.language =
       this.config.language != ""
@@ -152,7 +156,7 @@ class AtomicCalendar extends LitElement {
         }
 
         .content{
-          height: calc(100vh - 1.5em);
+          height: calc(100vh - 2em);
           overflow: scroll;
           padding: 1em;
         }
@@ -235,7 +239,7 @@ class AtomicCalendar extends LitElement {
           flex: 5;
           background-color: #dedede;
         }
-        
+
         .event-right-top{
           display: flex;
         }
@@ -730,7 +734,7 @@ class AtomicCalendar extends LitElement {
           <hr
              class="progress past"
              style="border-color: ${this.config.progressBarColor}; width:${eventPercentProgress}%;position:absolute;"
-           />  
+           />
             <hr
               class="progress"
               style="border-color: #b0abab;"

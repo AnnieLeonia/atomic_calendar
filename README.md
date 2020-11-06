@@ -1,4 +1,4 @@
-# atomic calendar card v0.9.5
+# atomic calendar card v0.9.7
 Advanced calendar card for Home Assistant with Lovelace.
 
 Work in progress. If you have any problems, please use [v0.8.5](https://github.com/atomic7777/atomic_calendar/releases/download/v0.8.5/atomic_calendar.js)
@@ -12,15 +12,15 @@ It contains two types of views: `Events mode` and `Calendar mode`. You can switc
 The most important features:
 - No need to load external libraries (everything is included)
 - Custom colors and settings for different calendars, custom font sizes, colors of every text and line
-- All translations included, few of the words can be configured in settings 
+- All translations included, few of the words can be configured in settings
 - Compatible with all day and multiple day events
 - Fast switch between both modes, or make one of them default
 
 * Event mode:
 - Shows nearest events, one by one, day by day, time of events in a different way (dates, hours)
 - Moves today's completed events up and dim them
-- Highlights the next event, or show a progress bar 
-- Shows event location link 
+- Highlights the next event, or show a progress bar
+- Shows event location link
 - Clicking on the title will open a new window with Google Calendar
 - Clicking on Location will open a window with this location on Google Maps
 
@@ -71,7 +71,7 @@ Week / month names are translated automatically
 
 | Name | Type | Default | Since | Description |
 |------|:----:|:-------:|:-----:|-------------|
-| language | string | optional | v0.8.4 | `default` Force language change. For example `pt-br`. If not set, default HA language is used. 
+| language | string | optional | v0.8.4 | `default` Force language change. For example `pt-br`. If not set, default HA language is used.
 | untilText | string | optional | v0.3.0 | `Until` Custom translation of `Until` text
 | fullDayEventText | string | optional | v0.3.0 | `All day` Custom translation of `All day` text
 | noEventsForNextDaysText | string | optional | v0.8.6 | `No events in the next days` Custom translation of `No events in the next days` text
@@ -155,8 +155,8 @@ entities:
               type: icon1		 	// Icon1 has no filters, show all events from this calendar
 	    - entity: calendar.atomic7777       // no type, it won't be shown in calendar mode
 	    CalEventIcon1Filter: bills,waste    // only events with those words will be shown
-	    CalEventIcon2Filter: cleaning       // only events with those words will be shown		
-			
+	    CalEventIcon2Filter: cleaning       // only events with those words will be shown
+
 ```
 
 If you set filters (keywords) for any type, it will show an icon only when event summary contains one of keywords. If you don't set any filter, it will show icons for all days with any events.
@@ -237,7 +237,7 @@ Simple configuration, both Events mode and Calendar mode, calendar is default:
             - calendar.atomic7777
 	      type: icon1,icon2
             - entity: calendar.kalendarz_swieta
-              type: holiday		
+              type: holiday
 
 ```
 
@@ -254,7 +254,7 @@ You have to add `max_results` setting to `google_calendars.yaml` file:
 ## 7. Automatic update
 Automatic update using `HACS` component:
 1. You need HACS installed and configured
-2. Go to Community tab, Settings 
+2. Go to Community tab, Settings
 3. Paste this line into `Add custom repository` field:
 ```
 https://github.com/atomic7777/atomic_calendar
