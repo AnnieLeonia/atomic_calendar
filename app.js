@@ -35,7 +35,11 @@ class AtomicCalendar extends LitElement {
 
   render() {
     if (this.firstrun) {
-      console.log("atomic_calendar v0.9.5 loaded");
+      console.info(
+        `%c  ATOMIC-CALENDAR  \n%c  Version 0.9.6    `,
+        'color: orange; font-weight: bold; background: black',
+        'color: white; font-weight: bold; background: dimgray',
+      );
     }
     this.language =
       this.config.language != ""

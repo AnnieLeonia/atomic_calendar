@@ -1,6 +1,6 @@
 {
   "name": "atomic-calendar",
-  "version": "1.0.0",
+  "version": "0.9.6",
   "description": "Calendar Card for Home Assistant",
   "main": "atomic_calendar.js",
   "scripts": {

@@ -1,4 +1,4 @@
-# atomic calendar card v0.9.5
+# atomic calendar card v0.9.6
 Advanced calendar card for Home Assistant with Lovelace.
 
 Work in progress. If you have any problems, please use [v0.8.5](https://github.com/atomic7777/atomic_calendar/releases/download/v0.8.5/atomic_calendar.js)
